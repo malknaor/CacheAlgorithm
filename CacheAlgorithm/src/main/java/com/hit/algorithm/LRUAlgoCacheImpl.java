@@ -1,5 +1,8 @@
 package com.hit.algorithm;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
 
     public LRUAlgoCacheImpl(int capacity){
