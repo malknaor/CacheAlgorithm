@@ -1,30 +1,54 @@
 package com.hit.algorithm;
 
+import com.sun.org.apache.bcel.internal.classfile.InnerClass;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V>{
 
-    private Map<K, V> cache;
+    private Map<K, Complex<V>> cache;
 
     public MRUAlgoCacheImpl(int capacity) {
         super(capacity);
-        cache = new HashMap<K, V>();
+        cache = new HashMap<K, Complex<V>>();
     }
 
     @Override
     public V getElement(K key) {
-        return cache.get(key);
+        V val = null;
+
+        if (cache.containsKey(key)) {
+            val = cache.get(key).value;
+        }
+
+        return val;
     }
 
     @Override
     public V putElement(K key, V value) {
         V retVal = null;
 
-        if (cache.size() < capacity && !cache.containsKey(key)) {
-            retVal = cache.put(key, value);
-        } else {
-            //replace the page
+        if (cache.containsKey(key)) {
+            cache.get(key).count = 0;
+            retVal = cache.get(key).getValue();
+        }
+        else if (cache.size() < capacity) {
+            cache.put(key, new Complex<V>(value));
+            retVal = cache.get(key).getValue();
+        }
+        else {
+            Integer mostRecent = 0;
+
+            for (Complex complex: cache.values()) {
+                complex.count++;
+                mostRecent = complex.count;
+            }
+
+            for (Complex complex: cache.values()) {
+                if (mostRecent < complex.count)
+                    retVal = (V)complex.getValue();
+            }
         }
 
         return retVal;
@@ -34,6 +58,28 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
     public void removeElement(K key) {
         if (cache.containsKey(key)) {
             cache.remove(key);
+        }
+    }
+
+    class Complex<V> {
+        private V value;
+        private Integer count;
+
+        public Complex(V value) {
+            this.value = value;
+            count = 0;
+        }
+
+        public V getValue() {
+            return value;
+        }
+
+        public Integer getCount() {
+            return count;
+        }
+
+        public void setCount(Integer count) {
+            this.count = count;
         }
     }
 }
