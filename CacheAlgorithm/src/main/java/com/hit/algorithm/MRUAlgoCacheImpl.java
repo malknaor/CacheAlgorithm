@@ -1,8 +1,5 @@
 package com.hit.algorithm;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,19 +30,17 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
         if (cache.containsKey(key)) {
             cache.get(key).count = 0;
             retVal = cache.get(key).getValue();
-        }
-        else if (cache.size() < capacity) {
+        } else if (cache.size() < capacity) {
             cache.put(key, new Complex<>(value));
             retVal = value;
-        }
-        else {
+        } else {
             Object[] array = cache.values().toArray();
-            Integer mostRecent = ((Complex<V>)array[0]).count;
+            Integer mostRecent = ((Complex<V>) array[0]).count;
 
             for (Complex complex : cache.values()) {
                 if (mostRecent < complex.count)
                     retVal = (V) complex.getValue();
-                    mostRecent = complex.count;
+                mostRecent = complex.count;
             }
         }
 
