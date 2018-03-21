@@ -1,11 +1,12 @@
 package com.hit.algorithm;
 
-import com.sun.org.apache.bcel.internal.classfile.InnerClass;
-
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V>{
+public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
 
     private Map<K, Complex<V>> cache;
 
@@ -34,21 +35,22 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
             retVal = cache.get(key).getValue();
         }
         else if (cache.size() < capacity) {
-            cache.put(key, new Complex<V>(value));
-            retVal = cache.get(key).getValue();
+            cache.put(key, new Complex<>(value));
+            retVal = value;
         }
         else {
-            Integer mostRecent = 0;
+            Object[] array = cache.values().toArray();
+            Integer mostRecent = ((Complex<V>)array[0]).count;
 
-            for (Complex complex: cache.values()) {
-                complex.count++;
-                mostRecent = complex.count;
-            }
-
-            for (Complex complex: cache.values()) {
+            for (Complex complex : cache.values()) {
                 if (mostRecent < complex.count)
-                    retVal = (V)complex.getValue();
+                    retVal = (V) complex.getValue();
+                    mostRecent = complex.count;
             }
+        }
+
+        for (Complex complex : cache.values()) {
+            complex.count++;
         }
 
         return retVal;
