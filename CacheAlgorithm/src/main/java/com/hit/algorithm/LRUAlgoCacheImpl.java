@@ -15,13 +15,20 @@ public class LRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
     }
 
     @Override
-    public V getElement(K key) {
-        return cache.get(key).value;
+    public V getElement(K key)
+    {
+        V retVal = null;
+
+        if (cache.containsKey(key)) {
+            retVal = cache.get(key).value;
+        }
+
+        return retVal;
     }
 
     @Override
     public V putElement(K key, V value) {
-        V retVal;
+        V retVal = null;
 
         if (cache.containsKey(key)) {
             cache.get(key).count = 0;
@@ -30,14 +37,30 @@ public class LRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
             cache.put(key, new Complex<>(value));
             retVal = value;
         } else {
-            
+            Object[] array = cache.values().toArray();
+            Integer mostRecent = ((Complex<V>) array[0]).count;
 
+            for (Complex complex : cache.values()) {
+                if (mostRecent < complex.count) {
+                    retVal = (V) complex.getValue();
+                    mostRecent = complex.count;
+                }
+            }
         }
 
+        for (Complex complex : cache.values()) {
+            complex.count++;
+        }
+
+        return retVal;
     }
 
     @Override
     public void removeElement(K key) {
+        if(cache.containsKey(key))
+        {
+            cache.remove(key);
+        }
 
     }
 
