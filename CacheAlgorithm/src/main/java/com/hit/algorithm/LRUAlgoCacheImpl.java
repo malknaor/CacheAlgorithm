@@ -42,7 +42,7 @@ public class LRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
 
             for (Complex complex : cache.values()) {
                 if (mostRecent < complex.count) {
-                    retVal = (V) complex.getValue();
+                    retVal = (V)complex.getValue();
                     mostRecent = complex.count;
                 }
             }

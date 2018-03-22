@@ -1,8 +1,6 @@
 package com.hit.algorithm;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import java.util.Random;
@@ -44,16 +42,13 @@ public class RandomAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implement
             retVal = (V)(array[randomValue]);
         }
 
-
         return retVal;
     }
 
     @Override
     public void removeElement(K key) {
-        if(cache.containsKey(key))
+        if (cache.containsKey(key)) {
             cache.remove(key);
-
+        }
     }
-
-
 }
