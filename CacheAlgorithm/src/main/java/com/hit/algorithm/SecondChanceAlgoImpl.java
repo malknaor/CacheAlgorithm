@@ -4,7 +4,7 @@ import java.util.*;
 
 public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
 
-    /*private */Queue<Complex<K, V>> cacheQueue;
+    LinkedList<Complex<K, V>> cacheQueue;
 
     public SecondChanceAlgoImpl(int capacity) {
         super(capacity);
@@ -81,10 +81,10 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
             if (tempComplex.isRefBit()) {
                 tempComplex.setRefBit(false);
                 retVal = findPageToReplace(key, value);
-                ((LinkedList<Complex<K, V>>)cacheQueue).addFirst(tempComplex);
+                cacheQueue.addFirst(tempComplex);
             } else {
                 retVal = tempComplex.getValue();
-                ((LinkedList<Complex<K, V>>)cacheQueue).addFirst(tempComplex);
+                cacheQueue.add(new Complex<>(key, value));
             }
         }
 

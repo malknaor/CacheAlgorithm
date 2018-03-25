@@ -1,5 +1,16 @@
 package com.hit.algorithm;
 
-public class IAlgoCacheTest {
+import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
+public interface IAlgoCacheTest {
+    @Test
+    void getElement();
+
+    @Test
+    void putElement();
+
+    @Test
+    void removeElement();
 }

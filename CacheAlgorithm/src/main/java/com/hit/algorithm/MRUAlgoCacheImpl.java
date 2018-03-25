@@ -1,11 +1,12 @@
 package com.hit.algorithm;
 
+import java.security.Key;
 import java.util.HashMap;
 import java.util.Map;
 
 public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
 
-    /*private */Map<K, Complex<V>> cache;
+    Map<K, Complex<V>> cache;
 
     public MRUAlgoCacheImpl(int capacity) {
         super(capacity);
@@ -34,16 +35,21 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
             cache.put(key, new Complex<>(value));
             retVal = value;
         } else {
+            K toRemove = null;
             Object[] array = cache.values().toArray();
             Integer mostRecent = ((Complex<V>) array[0]).getCount();
             retVal = ((Complex<V>) array[0]).getValue();
 
-            for (Complex complex : cache.values()) {
-                if (mostRecent > complex.getCount()) {
-                    retVal = (V) complex.getValue();
-                    mostRecent = complex.getCount();
+            for (K currentKey : cache.keySet()) {
+                if (mostRecent > cache.get(currentKey).getCount()) {
+                    retVal = cache.get(currentKey).getValue();
+                    mostRecent = cache.get(currentKey).getCount();
+                    toRemove = currentKey;
                 }
             }
+
+            cache.put(key, new Complex<>(value));
+            cache.remove(toRemove);
         }
 
         for (Complex complex : cache.values()) {

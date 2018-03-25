@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MRUAlgoCacheImplTest {
+public class MRUAlgoCacheImplTest implements IAlgoCacheTest{
 
     @Test
     public void getElement() {
@@ -15,6 +15,7 @@ public class MRUAlgoCacheImplTest {
 
         assertEquals("Ten", testObject.getElement(10));
         assertEquals("Twenty", testObject.getElement(20));
+        assertEquals(null, testObject.getElement(2));
     }
 
     @Test
@@ -26,6 +27,7 @@ public class MRUAlgoCacheImplTest {
         testObject.putElement(30, "Thirty");
 
         assertEquals("Thirty", testObject.putElement(40, "Forty"));
+        assertEquals("Forty", testObject.putElement(30, "Thirty"));
     }
 
     @Test

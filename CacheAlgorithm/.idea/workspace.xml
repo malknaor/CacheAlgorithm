@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="640944cb-120b-4926-b163-ec3e91ff8768" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CacheAlgorithm.iml" afterPath="$PROJECT_DIR$/CacheAlgorithm.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hit/algorithm/LRUAlgoCacheImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/hit/algorithm/LRUAlgoCacheImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hit/algorithm/MRUAlgoCacheImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/hit/algorithm/MRUAlgoCacheImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hit/algorithm/RandomAlgoCacheImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/hit/algorithm/RandomAlgoCacheImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hit/algorithm/SecondChanceAlgoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/hit/algorithm/SecondChanceAlgoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/hit/algorithm/IAlgoCacheTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/hit/algorithm/IAlgoCacheTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java" afterPath="$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,21 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IAlgoCache.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/IAlgoCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MRUAlgoCacheImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/MRUAlgoCacheImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="38" column="56" lean-forward="false" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+            <state relative-caret-position="105">
+              <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,8 +42,8 @@
       <file leaf-file-name="MRUAlgoCacheImplTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            <state relative-caret-position="560">
+              <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -62,8 +52,8 @@
       <file leaf-file-name="LRUAlgoCacheImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/LRUAlgoCacheImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+            <state relative-caret-position="820">
+              <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,9 +64,11 @@
       <file leaf-file-name="IAlgoCacheTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/IAlgoCacheTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="80">
+              <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,7 +76,7 @@
       <file leaf-file-name="RandomAlgoCacheImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/RandomAlgoCacheImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1060">
+            <state relative-caret-position="1000">
               <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -96,17 +88,17 @@
       <file leaf-file-name="SecondChanceAlgoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/SecondChanceAlgoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="16" />
+            <state relative-caret-position="40">
+              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
               <folding>
-                <element signature="e#2737#2738#0" expanded="true" />
-                <element signature="e#2771#2772#0" expanded="true" />
-                <element signature="e#2802#2803#0" expanded="true" />
-                <element signature="e#2838#2839#0" expanded="true" />
-                <element signature="e#2875#2876#0" expanded="true" />
-                <element signature="e#2912#2913#0" expanded="true" />
-                <element signature="e#2961#2962#0" expanded="true" />
-                <element signature="e#3005#3006#0" expanded="true" />
+                <element signature="e#2681#2682#0" expanded="true" />
+                <element signature="e#2715#2716#0" expanded="true" />
+                <element signature="e#2746#2747#0" expanded="true" />
+                <element signature="e#2782#2783#0" expanded="true" />
+                <element signature="e#2819#2820#0" expanded="true" />
+                <element signature="e#2856#2857#0" expanded="true" />
+                <element signature="e#2905#2906#0" expanded="true" />
+                <element signature="e#2949#2950#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,18 +107,8 @@
       <file leaf-file-name="SecondChanceAlgoImplTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrameworkMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+            <state relative-caret-position="220">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,10 +140,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/SecondChance.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/AbstractAlgoCache.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/RandomAlgoCacheImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/LRUAlgoCacheImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/RandomAlgoCacheImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/IAlgoCacheTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/SecondChanceAlgoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/MRUAlgoCacheImpl.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java" />
       </list>
@@ -202,6 +185,9 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,9 +240,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,6 +251,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -290,7 +274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MRUAlgoCacheImplTest">
+  <component name="RunManager" selected="JUnit.MRUAlgoCacheImplTest.putElement">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -407,7 +391,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SecondChanceAlgoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SecondChanceAlgoImplTest.putElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.hit.algorithm.*" />
@@ -419,8 +403,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.hit.algorithm" />
       <option name="MAIN_CLASS_NAME" value="com.hit.algorithm.SecondChanceAlgoImplTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="putElement" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -493,19 +477,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SecondChanceAlgoImplTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest.getElement" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in CacheAlgorithm" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest.putElement" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest.getElement" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in CacheAlgorithm" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest.putElement" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SecondChanceAlgoImplTest.putElement" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest.putElement" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest.putElement" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SecondChanceAlgoImplTest.putElement" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest.getElement" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in CacheAlgorithm" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SecondChanceAlgoImplTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MRUAlgoCacheImplTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in CacheAlgorithm" />
       </list>
     </recent_temporary>
   </component>
@@ -532,44 +516,48 @@
       <workItem from="1521626940836" duration="2514000" />
       <workItem from="1521632259422" duration="8667000" />
       <workItem from="1521653932851" duration="537000" />
-      <workItem from="1521654503590" duration="15768000" />
+      <workItem from="1521654503590" duration="16122000" />
+      <workItem from="1521780563686" duration="91000" />
+      <workItem from="1521788505836" duration="1561000" />
+      <workItem from="1521795701869" duration="1952000" />
+      <workItem from="1521965792981" duration="2911000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MRUAlgoCacheImplTest - 2018.03.22 at 21h 14m 14s.xml">
-      <configuration name="MRUAlgoCacheImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest - 2018.03.22 at 21h 29m 37s.xml">
-      <configuration name="MRUAlgoCacheImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.22 at 21h 17m 21s.xml">
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.25 at 12h 02m 41s.xml">
       <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.22 at 21h 18m 15s.xml">
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.25 at 12h 03m 33s.xml">
       <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.22 at 21h 19m 23s.xml">
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.25 at 12h 03m 39s.xml">
       <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.22 at 21h 20m 57s.xml">
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.25 at 12h 04m 57s.xml">
       <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.22 at 21h 27m 37s.xml">
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.25 at 12h 05m 06s.xml">
       <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.22 at 21h 28m 11s.xml">
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.25 at 12h 05m 09s.xml">
       <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.22 at 21h 28m 14s.xml">
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.25 at 12h 05m 19s.xml">
       <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.22 at 21h 28m 20s.xml">
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.25 at 12h 06m 34s.xml">
+      <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.25 at 12h 06m 46s.xml">
+      <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.03.25 at 12h 06m 52s.xml">
       <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53901000" />
+    <option name="totallyTimeSpent" value="60770000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,25 +580,25 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5030257" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24583964" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -648,7 +636,27 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="28" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -657,24 +665,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/MRUAlgoCacheImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="42" column="61" lean-forward="false" selection-start-line="42" selection-start-column="61" selection-end-line="42" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/AbstractAlgoCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/IAlgoCache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -708,14 +698,14 @@
         <state relative-caret-position="187">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2771#2772#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-            <element signature="e#2875#2876#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#2681#2682#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2856#2857#0" expanded="true" />
+            <element signature="e#2905#2906#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -771,14 +761,14 @@
         <state relative-caret-position="60">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2771#2772#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-            <element signature="e#2875#2876#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#2681#2682#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2856#2857#0" expanded="true" />
+            <element signature="e#2905#2906#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -834,14 +824,14 @@
         <state relative-caret-position="60">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2771#2772#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-            <element signature="e#2875#2876#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#2681#2682#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2856#2857#0" expanded="true" />
+            <element signature="e#2905#2906#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -897,14 +887,14 @@
         <state relative-caret-position="60">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2771#2772#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-            <element signature="e#2875#2876#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#2681#2682#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2856#2857#0" expanded="true" />
+            <element signature="e#2905#2906#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -960,14 +950,14 @@
         <state relative-caret-position="60">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2771#2772#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-            <element signature="e#2875#2876#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#2681#2682#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2856#2857#0" expanded="true" />
+            <element signature="e#2905#2906#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1025,14 +1015,14 @@
         <state relative-caret-position="40">
           <caret line="2" column="60" lean-forward="false" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
           <folding>
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2771#2772#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-            <element signature="e#2875#2876#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#2681#2682#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2856#2857#0" expanded="true" />
+            <element signature="e#2905#2906#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1059,23 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/IAlgoCacheTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,8 +1062,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/LRUAlgoCacheImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+        <state relative-caret-position="820">
+          <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1099,7 +1072,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/RandomAlgoCacheImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
+        <state relative-caret-position="1000">
           <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1107,20 +1080,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/IAlgoCacheTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <marker date="1517265822000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1517265822000" expanded="false" signature="147:326" ph="..." />
+            <marker date="1517265822000" expanded="true" signature="476:685" ph="{...}" />
+            <marker date="1517265822000" expanded="true" signature="716:727" ph=" { " />
+            <marker date="1517265822000" expanded="true" signature="746:752" ph=" }" />
+            <marker date="1517265822000" expanded="true" signature="852:1077" ph="{...}" />
+            <marker date="1517265822000" expanded="true" signature="895:1063" ph="{...}" />
+            <marker date="1517265822000" expanded="true" signature="963:1053" ph="{...}" />
+            <marker date="1517265822000" expanded="false" signature="1106:1117" ph=" { " />
+            <marker date="1517265822000" expanded="false" signature="1146:1152" ph=" }" />
+            <marker date="1517265822000" expanded="true" signature="1236:1469" ph="{...}" />
+            <marker date="1517265822000" expanded="true" signature="1548:2081" ph="{...}" />
+            <marker date="1517265822000" expanded="false" signature="2115:2126" ph=" { " />
+            <marker date="1517265822000" expanded="false" signature="2160:2166" ph=" }" />
+            <marker date="1517265822000" expanded="false" signature="2203:2214" ph=" { " />
+            <marker date="1517265822000" expanded="false" signature="2249:2255" ph=" }" />
+            <marker date="1517265822000" expanded="false" signature="2286:2297" ph=" { " />
+            <marker date="1517265822000" expanded="false" signature="2325:2331" ph=" }" />
+            <marker date="1517265822000" expanded="false" signature="2372:2383" ph=" { " />
+            <marker date="1517265822000" expanded="false" signature="2422:2428" ph=" }" />
+            <marker date="1517265822000" expanded="true" signature="2501:2586" ph="{...}" />
+            <marker date="1517265822000" expanded="true" signature="2643:3127" ph="{...}" />
+            <marker date="1517265822000" expanded="true" signature="3167:3289" ph="{...}" />
+            <marker date="1517265822000" expanded="false" signature="3316:3327" ph=" { " />
+            <marker date="1517265822000" expanded="false" signature="3357:3363" ph=" }" />
+            <marker date="1517265822000" expanded="true" signature="3369:3387" ph="/**...*/" />
+            <marker date="1517265822000" expanded="true" signature="3447:3595" ph="{...}" />
+            <marker date="1517265822000" expanded="false" signature="3639:3650" ph=" { " />
+            <marker date="1517265822000" expanded="false" signature="3689:3695" ph=" }" />
+            <marker date="1517265822000" expanded="false" signature="3737:3748" ph=" { " />
+            <marker date="1517265822000" expanded="false" signature="3784:3790" ph=" }" />
+            <marker date="1517265822000" expanded="true" signature="3867:3932" ph="{...}" />
+            <marker date="1517265822000" expanded="false" signature="3962:3973" ph=" { " />
+            <marker date="1517265822000" expanded="false" signature="4003:4009" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/SecondChanceAlgoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="16" />
+        <state relative-caret-position="40">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
           <folding>
-            <element signature="e#2737#2738#0" expanded="true" />
-            <element signature="e#2771#2772#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-            <element signature="e#2875#2876#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#2681#2682#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2746#2747#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2856#2857#0" expanded="true" />
+            <element signature="e#2905#2906#0" expanded="true" />
+            <element signature="e#2949#2950#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="208" column="0" lean-forward="false" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,18 +1182,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="40" column="34" lean-forward="false" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/MRUAlgoCacheImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="38" column="56" lean-forward="false" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+        <state relative-caret-position="105">
+          <caret line="38" column="54" lean-forward="true" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1152,8 +1194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        <state relative-caret-position="560">
+          <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
           <folding />
         </state>
       </provider>
