@@ -1,15 +1,13 @@
 package com.hit.algorithm;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import java.util.Random;
 
 public class RandomAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
 
-    private Map<K, V> cache;
+    /*private*/ Map<K, V> cache;
 
     public RandomAlgoCacheImpl(int capacity) {
         super(capacity);
