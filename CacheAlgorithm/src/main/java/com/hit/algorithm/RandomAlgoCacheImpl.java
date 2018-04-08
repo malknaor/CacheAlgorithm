@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class RandomAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
 
-    /*private*/ Map<K, V> cache;
+    private Map<K, V> cache;
 
     public RandomAlgoCacheImpl(int capacity) {
         super(capacity);

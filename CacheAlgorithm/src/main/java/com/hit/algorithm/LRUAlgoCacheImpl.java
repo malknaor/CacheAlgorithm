@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class LRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
 
-    /*private */Map<K, Complex<V>> cache;
+    private Map<K, Complex<V>> cache;
 
     public LRUAlgoCacheImpl(int capacity){
         super(capacity);

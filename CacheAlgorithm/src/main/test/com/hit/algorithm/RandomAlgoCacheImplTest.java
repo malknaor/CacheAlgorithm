@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class RandomAlgoCacheImplTest {
+public class RandomAlgoCacheImplTest implements IAlgoCacheTest {
     @Test
     public void getElement()  {
         RandomAlgoCacheImpl<Integer, String> testerRandGet = new RandomAlgoCacheImpl<>(3);
@@ -36,18 +36,18 @@ public class RandomAlgoCacheImplTest {
         RandomAlgoCacheImpl<Integer, String> testerRandRemove = new RandomAlgoCacheImpl<>(3);
 
         testerRandRemove.putElement(1, "one");
-        assertEquals(1, testerRandRemove.cache.size());
+        assertEquals(1, testerRandRemove.getCurrentCapacity());
         testerRandRemove.putElement(2, "two");
-        assertEquals(2, testerRandRemove.cache.size());
+        assertEquals(2, testerRandRemove.getCurrentCapacity());
         testerRandRemove.putElement(3, "three");
-        assertEquals(3, testerRandRemove.cache.size());
+        assertEquals(3, testerRandRemove.getCurrentCapacity());
 
         testerRandRemove.removeElement(1);
-        assertEquals(2, testerRandRemove.cache.size());
+        assertEquals(2, testerRandRemove.getCurrentCapacity());
         testerRandRemove.removeElement(2);
-        assertEquals(1, testerRandRemove.cache.size());
+        assertEquals(1, testerRandRemove.getCurrentCapacity());
         testerRandRemove.removeElement(3);
-        assertEquals(0, testerRandRemove.cache.size());
+        assertEquals(0, testerRandRemove.getCurrentCapacity());
 
 
 
