@@ -15,6 +15,11 @@ public class RandomAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implement
     }
 
     @Override
+    public int getCurrentCapacity() {
+        return cache.size();
+    }
+
+    @Override
     public V getElement(K key) {
         V Val = null;
 

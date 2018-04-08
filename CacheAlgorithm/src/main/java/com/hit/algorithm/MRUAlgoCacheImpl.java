@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
 
-    Map<K, Complex<V>> cache;
+    private Map<K, Complex<V>> cache;
 
     public MRUAlgoCacheImpl(int capacity) {
         super(capacity);
@@ -13,11 +13,22 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
     }
 
     @Override
+    public int getCurrentCapacity() {
+        return cache.size();
+    }
+
+    @Override
     public V getElement(K key) {
         V val = null;
 
         if (cache.containsKey(key)) {
+
             val = cache.get(key).value;
+            cache.get(key).count = 0;
+
+            for (Complex complex : cache.values()) {
+                complex.count++;
+            }
         }
 
         return val;
@@ -65,7 +76,7 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
         }
     }
 
-    class Complex<V> {
+    private class Complex<V> {
         private V value;
         private Integer count;
 

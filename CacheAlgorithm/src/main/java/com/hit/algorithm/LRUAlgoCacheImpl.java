@@ -5,11 +5,16 @@ import java.util.Map;
 
 public class LRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
 
-    Map<K, Complex<V>> cache;
+    private Map<K, Complex<V>> cache;
 
     public LRUAlgoCacheImpl(int capacity){
         super(capacity);
         cache = new HashMap<K, Complex<V>>();
+    }
+
+    @Override
+    public int getCurrentCapacity() {
+        return cache.size();
     }
 
     @Override
@@ -19,6 +24,11 @@ public class LRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
 
         if (cache.containsKey(key)) {
             retVal = cache.get(key).value;
+            cache.get(key).count = 0;
+
+            for (Complex complex : cache.values()) {
+                complex.count++;
+            }
         }
 
         return retVal;
