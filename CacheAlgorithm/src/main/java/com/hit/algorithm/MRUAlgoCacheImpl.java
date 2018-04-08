@@ -13,11 +13,22 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
     }
 
     @Override
+    public int getCurrentCapacity() {
+        return cache.size();
+    }
+
+    @Override
     public V getElement(K key) {
         V val = null;
 
         if (cache.containsKey(key)) {
+
             val = cache.get(key).value;
+            cache.get(key).count = 0;
+
+            for (Complex complex : cache.values()) {
+                complex.count++;
+            }
         }
 
         return val;
@@ -28,20 +39,27 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
         V retVal = null;
 
         if (cache.containsKey(key)) {
-            cache.get(key).count = 0;
+            cache.get(key).setCount(0);
             retVal = cache.get(key).getValue();
         } else if (cache.size() < capacity) {
             cache.put(key, new Complex<>(value));
             retVal = value;
         } else {
+            K keyToRemove = null;
             Object[] array = cache.values().toArray();
-            Integer mostRecent = ((Complex<V>) array[0]).count;
+            Integer mostRecent = ((Complex<V>) array[0]).getCount();
+            retVal = ((Complex<V>) array[0]).getValue();
 
-            for (Complex complex : cache.values()) {
-                if (mostRecent < complex.count)
-                    retVal = (V) complex.getValue();
-                mostRecent = complex.count;
+            for (K currentKey : cache.keySet()) {
+                if (mostRecent > cache.get(currentKey).getCount()) {
+                    retVal = cache.get(currentKey).getValue();
+                    mostRecent = cache.get(currentKey).getCount();
+                    keyToRemove = currentKey;
+                }
             }
+
+            cache.put(key, new Complex<>(value));
+            cache.remove(keyToRemove);
         }
 
         for (Complex complex : cache.values()) {
@@ -58,7 +76,7 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
         }
     }
 
-    class Complex<V> {
+    private class Complex<V> {
         private V value;
         private Integer count;
 

@@ -1,8 +1,6 @@
 package com.hit.algorithm;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class LRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
@@ -15,12 +13,22 @@ public class LRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
     }
 
     @Override
+    public int getCurrentCapacity() {
+        return cache.size();
+    }
+
+    @Override
     public V getElement(K key)
     {
         V retVal = null;
 
         if (cache.containsKey(key)) {
             retVal = cache.get(key).value;
+            cache.get(key).count = 0;
+
+            for (Complex complex : cache.values()) {
+                complex.count++;
+            }
         }
 
         return retVal;
@@ -37,15 +45,21 @@ public class LRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
             cache.put(key, new Complex<>(value));
             retVal = value;
         } else {
+            K keyToRemove = null;
             Object[] array = cache.values().toArray();
             Integer mostRecent = ((Complex<V>) array[0]).count;
+            retVal = ((Complex<V>) array[0]).getValue();
 
-            for (Complex complex : cache.values()) {
-                if (mostRecent < complex.count) {
-                    retVal = (V) complex.getValue();
-                    mostRecent = complex.count;
+            for (K currentKey : cache.keySet()) {
+                if (mostRecent < cache.get(currentKey).count) {
+                    retVal = cache.get(currentKey).getValue();
+                    mostRecent = cache.get(currentKey).count;
+                    keyToRemove = currentKey;
                 }
             }
+
+            cache.put(key, new Complex<>(value));
+            cache.remove(keyToRemove);
         }
 
         for (Complex complex : cache.values()) {

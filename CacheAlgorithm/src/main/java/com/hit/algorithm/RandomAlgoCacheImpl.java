@@ -15,6 +15,11 @@ public class RandomAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implement
     }
 
     @Override
+    public int getCurrentCapacity() {
+        return cache.size();
+    }
+
+    @Override
     public V getElement(K key) {
         V Val = null;
 
@@ -42,16 +47,13 @@ public class RandomAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implement
             retVal = (V)(array[randomValue]);
         }
 
-
         return retVal;
     }
 
     @Override
     public void removeElement(K key) {
-        if(cache.containsKey(key))
+        if (cache.containsKey(key)) {
             cache.remove(key);
-
+        }
     }
-
-
 }

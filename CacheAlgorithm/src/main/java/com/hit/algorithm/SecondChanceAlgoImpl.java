@@ -4,7 +4,7 @@ import java.util.*;
 
 public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
 
-    Queue<Complex<K, V>> cacheQueue;
+    private LinkedList<Complex<K, V>> cacheQueue;
 
     public SecondChanceAlgoImpl(int capacity) {
         super(capacity);
@@ -12,12 +12,18 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
     }
 
     @Override
+    public int getCurrentCapacity() {
+        return cacheQueue.size();
+    }
+
+    @Override
     public V getElement(K key) {
         V retVal = null;
 
         for (Complex<K, V> complex : cacheQueue) {
-            if (complex.key == key) {
-                retVal = complex.value;
+            if (complex.getKey() == key) {
+                retVal = complex.getValue();
+                complex.refBit = true;
                 break;
             }
         }
@@ -32,16 +38,21 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
 
         if (checkIfExist) {
             for (Complex<K, V> complex: cacheQueue) {
-                if (complex.key == key){
+                if (complex.getKey() == key){
                     complex.setRefBit(true);
-                    retVal = complex.value;
+                    retVal = complex.getValue();
                     break;
                 }
             }
         } else if (cacheQueue.size() < capacity) {
             Complex<K, V> tempComplex = new Complex<>(key, value);
-            retVal = tempComplex.value;
+            retVal = tempComplex.getValue();
             cacheQueue.add(tempComplex);
+        } else {
+            retVal = findPageToReplace(key, value);
+            if (retVal == null){
+                retVal = findPageToReplace(key, value);
+            }
         }
 
         return retVal;
@@ -61,11 +72,11 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
     }
 
     private boolean ifKeyExist(K key) {
-        boolean exist = true;
+        boolean exist = false;
 
         for (Complex<K, V> complex : cacheQueue){
-            if (complex.key == key)
-                exist = false;
+            if (complex.getKey() == key)
+                exist = true;
         }
 
         return exist;
@@ -79,9 +90,10 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
             if (tempComplex.isRefBit()) {
                 tempComplex.setRefBit(false);
                 retVal = findPageToReplace(key, value);
-                cacheQueue.add(tempComplex);
+                cacheQueue.addFirst(tempComplex);
             } else {
-                retVal = tempComplex.value;
+                retVal = tempComplex.getValue();
+                cacheQueue.add(new Complex<>(key, value));
             }
         }
 
@@ -97,6 +109,10 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
             this.key = key;
             this.value = value;
             refBit = false;
+        }
+
+        public K getKey() {
+            return key;
         }
 
         public V getValue() {
