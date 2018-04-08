@@ -2,6 +2,9 @@ package com.hit.algorithm;
 
 import org.junit.Test;
 
+/**
+ *
+ */
 public interface IAlgoCacheTest {
     @Test
     void getElement();
