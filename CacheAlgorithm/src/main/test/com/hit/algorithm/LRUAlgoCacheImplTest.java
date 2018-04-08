@@ -8,7 +8,7 @@ public class LRUAlgoCacheImplTest implements IAlgoCacheTest{
 
     @Test
     public void getElement() {
-        LRUAlgoCacheImpl<Integer, String> testObject = new LRUAlgoCacheImpl<>(3);
+        IAlgoCache<Integer, String> testObject = new LRUAlgoCacheImpl<>(3);
 
         testObject.putElement(10, "Ten");
         testObject.putElement(20, "Twenty");
@@ -24,7 +24,7 @@ public class LRUAlgoCacheImplTest implements IAlgoCacheTest{
 
     @Test
     public void putElement() {
-        LRUAlgoCacheImpl<Integer, String> testObject = new LRUAlgoCacheImpl<>(3);
+        IAlgoCache<Integer, String> testObject = new LRUAlgoCacheImpl<>(3);
 
         testObject.putElement(10, "Ten");
         testObject.putElement(20, "Twenty");
@@ -38,19 +38,17 @@ public class LRUAlgoCacheImplTest implements IAlgoCacheTest{
 
     @Test
     public void removeElement() {
-        LRUAlgoCacheImpl<Integer, String> testObject = new LRUAlgoCacheImpl<>(3);
+        IAlgoCache<Integer, String> testObject = new LRUAlgoCacheImpl<>(3);
 
         testObject.putElement(10, "Ten");
-        assertEquals(1, testObject.getCurrentCapacity());
         testObject.putElement(20, "Twenty");
-        assertEquals(2, testObject.getCurrentCapacity());
         testObject.putElement(30, "Thirty");
-        assertEquals(3, testObject.getCurrentCapacity());
+
         testObject.removeElement(20);
-        assertEquals(2, testObject.getCurrentCapacity());
+        assertEquals(null, testObject.getElement(20));
         testObject.removeElement(10);
-        assertEquals(1, testObject.getCurrentCapacity());
-        testObject.removeElement(15);
-        assertEquals(1, testObject.getCurrentCapacity());
+        assertEquals(null, testObject.getElement(10));
+        testObject.removeElement(30);
+        assertEquals(null, testObject.getElement(30));
     }
 }

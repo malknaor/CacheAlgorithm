@@ -13,11 +13,6 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
     }
 
     @Override
-    public int getCurrentCapacity() {
-        return cache.size();
-    }
-
-    @Override
     public V getElement(K key) {
         V val = null;
 

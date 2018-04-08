@@ -12,11 +12,6 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
     }
 
     @Override
-    public int getCurrentCapacity() {
-        return cacheQueue.size();
-    }
-
-    @Override
     public V getElement(K key) {
         V retVal = null;
 

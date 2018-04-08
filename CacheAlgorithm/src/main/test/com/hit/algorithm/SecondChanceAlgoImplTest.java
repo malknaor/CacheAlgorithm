@@ -8,7 +8,7 @@ public class SecondChanceAlgoImplTest implements IAlgoCacheTest {
 
     @Test
     public void getElement() {
-        SecondChanceAlgoImpl<Integer, String> testObject = new SecondChanceAlgoImpl<>(4);
+        IAlgoCache<Integer, String> testObject = new SecondChanceAlgoImpl<>(4);
 
         testObject.putElement(10, "Ten");
         testObject.putElement(20, "Twenty");
@@ -24,7 +24,7 @@ public class SecondChanceAlgoImplTest implements IAlgoCacheTest {
 
     @Test
     public void putElement() {
-        SecondChanceAlgoImpl<Integer, String> testObject = new SecondChanceAlgoImpl<>(3);
+        IAlgoCache<Integer, String> testObject = new SecondChanceAlgoImpl<>(3);
 
         testObject.putElement(10, "Ten");
         testObject.putElement(10, "Ten");
@@ -43,13 +43,17 @@ public class SecondChanceAlgoImplTest implements IAlgoCacheTest {
 
     @Test
     public void removeElement() {
-        SecondChanceAlgoImpl<Integer, String> testObject = new SecondChanceAlgoImpl<>(3);
+        IAlgoCache<Integer, String> testObject = new SecondChanceAlgoImpl<>(3);
 
         testObject.putElement(10, "Ten");
         testObject.putElement(20, "Twenty");
+        testObject.putElement(30, "Thirty");
+
         testObject.removeElement(20);
-        assertEquals(1, testObject.getCurrentCapacity());
+        assertEquals(null, testObject.getElement(20));
         testObject.removeElement(10);
-        assertEquals(0, testObject.getCurrentCapacity());
+        assertEquals(null, testObject.getElement(10));
+        testObject.removeElement(30);
+        assertEquals(null, testObject.getElement(30));
     }
 }

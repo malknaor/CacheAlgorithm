@@ -11,6 +11,4 @@ public abstract class AbstractAlgoCache<K, V> implements IAlgoCache<K, V> {
     public int getCapacity() {
         return capacity;
     }
-
-    public abstract int getCurrentCapacity();
 }
