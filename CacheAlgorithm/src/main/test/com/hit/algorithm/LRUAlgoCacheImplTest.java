@@ -26,7 +26,7 @@ public class LRUAlgoCacheImplTest implements IAlgoCacheTest{
     public void putElement() {
         IAlgoCache<Integer, String> testObject = new LRUAlgoCacheImpl<>(3);
 
-        testObject.putElement(10, "Ten");
+        testObject.putElement(10, null);
         testObject.putElement(20, "Twenty");
         testObject.putElement(30, "Thirty");
 

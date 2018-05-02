@@ -35,11 +35,9 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
 
         if (cache.containsKey(key)) {
             cache.get(key).setCount(0);
-            retVal = cache.get(key).getValue();
         } else if (cache.size() < capacity) {
             cache.put(key, new Complex<>(value));
-            retVal = value;
-        } else {
+        } else if (value != null){
             K keyToRemove = null;
             Object[] array = cache.values().toArray();
             Integer mostRecent = ((Complex<V>) array[0]).getCount();

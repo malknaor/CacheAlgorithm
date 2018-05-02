@@ -35,15 +35,13 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
             for (Complex<K, V> complex: cacheQueue) {
                 if (complex.getKey() == key){
                     complex.setRefBit(true);
-                    retVal = complex.getValue();
                     break;
                 }
             }
         } else if (cacheQueue.size() < capacity) {
             Complex<K, V> tempComplex = new Complex<>(key, value);
-            retVal = tempComplex.getValue();
             cacheQueue.add(tempComplex);
-        } else {
+        } else if (value != null){
             retVal = findPageToReplace(key, value);
             if (retVal == null){
                 retVal = findPageToReplace(key, value);
@@ -100,7 +98,7 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
         V value;
         boolean refBit;
 
-        public Complex(K key, V value) {
+        Complex(K key, V value) {
             this.key = key;
             this.value = value;
             refBit = false;

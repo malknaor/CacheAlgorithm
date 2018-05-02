@@ -28,14 +28,14 @@ public class RandomAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implement
 
     @Override
     public V putElement(K key, V value) {
-        V retVal;
+        V retVal = null;
 
         if (cache.containsKey(key)) {
             retVal = cache.get(key);
         } else if (cache.size() < capacity) {
             cache.put(key, value);
             retVal = value;
-        } else {
+        } else if (value != null){
             Random random = new Random();
             Integer randomValue = random.nextInt(capacity);
             Object[] array = cache.values().toArray();
