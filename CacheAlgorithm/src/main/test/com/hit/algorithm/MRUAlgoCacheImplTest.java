@@ -32,6 +32,7 @@ public class MRUAlgoCacheImplTest implements IAlgoCacheTest{
 
         assertEquals("Thirty", testObject.putElement(40, "Forty"));
         assertEquals("Forty", testObject.putElement(30, "Thirty"));
+        assertEquals(null, testObject.putElement(30, "Thirty"));
     }
 
     @Test

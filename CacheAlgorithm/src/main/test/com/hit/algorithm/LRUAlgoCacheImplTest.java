@@ -26,14 +26,17 @@ public class LRUAlgoCacheImplTest implements IAlgoCacheTest{
     public void putElement() {
         IAlgoCache<Integer, String> testObject = new LRUAlgoCacheImpl<>(3);
 
-        testObject.putElement(10, null);
+        testObject.putElement(10, "Ten");
         testObject.putElement(20, "Twenty");
         testObject.putElement(30, "Thirty");
 
         String s1 = testObject.putElement(40, "Forty");
         assertEquals("Ten", s1);
-        String s2 = testObject.putElement(10, "Ten");
-        assertEquals("Twenty", s2);
+        s1 = testObject.putElement(10, "Ten");
+        assertEquals("Twenty", s1);
+
+        s1 = testObject.putElement(40, "Forty");
+        assertEquals(null, s1);
     }
 
     @Test

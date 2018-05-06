@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="CacheAlgorithm:jar" />
+      <artifact name="CacheAlgorithm" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -18,29 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IAlgoCache.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/IAlgoCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecondChanceAlgoImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SecondChanceAlgoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/SecondChanceAlgoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractAlgoCache.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/AbstractAlgoCache.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="180">
+              <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -48,8 +30,8 @@
       <file leaf-file-name="LRUAlgoCacheImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/LRUAlgoCacheImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+            <state relative-caret-position="78">
+              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,17 +42,38 @@
       <file leaf-file-name="MRUAlgoCacheImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/MRUAlgoCacheImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+            <state relative-caret-position="98">
+              <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2130#2131#0" expanded="true" />
-                <element signature="e#2166#2167#0" expanded="true" />
-                <element signature="e#2203#2204#0" expanded="true" />
-                <element signature="e#2239#2240#0" expanded="true" />
-                <element signature="e#2286#2287#0" expanded="true" />
-                <element signature="e#2328#2329#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LRUAlgoCacheImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/LRUAlgoCacheImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MRUAlgoCacheImplTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomAlgoCacheImplTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/RandomAlgoCacheImplTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -78,8 +81,8 @@
       <file leaf-file-name="RandomAlgoCacheImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/RandomAlgoCacheImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="99">
+              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -89,17 +92,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/RandomAlgoCacheImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/IAlgoCacheTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/AbstractAlgoCache.java" />
-        <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/IAlgoCache.java" />
-        <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/LRUAlgoCacheImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/LRUAlgoCacheImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/MRUAlgoCacheImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/RandomAlgoCacheImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/LRUAlgoCacheImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/SecondChanceAlgoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/LRUAlgoCacheImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hit/algorithm/RandomAlgoCacheImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/test/com/hit/algorithm/RandomAlgoCacheImplTest.java" />
       </list>
     </option>
   </component>
@@ -110,18 +113,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="-1032" />
+    <option name="y" value="-114" />
+    <option name="width" value="1040" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -129,6 +130,17 @@
             <path>
               <item name="CacheAlgorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="CacheAlgorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CacheAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CacheAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CacheAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CacheAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CacheAlgorithm" type="b2602c69:ProjectViewProjectNode" />
@@ -175,6 +187,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LRUAlgoCacheImplTest.putElement">
+  <component name="RunManager" selected="JUnit.RandomAlgoCacheImplTest.putElement">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -255,30 +269,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="LRUAlgoCacheImplTest.removeElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CacheAlgorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hit.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hit.algorithm" />
-      <option name="MAIN_CLASS_NAME" value="com.hit.algorithm.LRUAlgoCacheImplTest" />
-      <option name="METHOD_NAME" value="removeElement" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="MRUAlgoCacheImplTest.getElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MRUAlgoCacheImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CacheAlgorithm" />
       <extension name="coverage">
         <pattern>
@@ -290,7 +281,30 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.hit.algorithm" />
       <option name="MAIN_CLASS_NAME" value="com.hit.algorithm.MRUAlgoCacheImplTest" />
-      <option name="METHOD_NAME" value="getElement" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MRUAlgoCacheImplTest.putElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CacheAlgorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hit.algorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.hit.algorithm" />
+      <option name="MAIN_CLASS_NAME" value="com.hit.algorithm.MRUAlgoCacheImplTest" />
+      <option name="METHOD_NAME" value="putElement" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -301,7 +315,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="RandomAlgoCacheImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RandomAlgoCacheImplTest.putElement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CacheAlgorithm" />
       <extension name="coverage">
         <pattern>
@@ -313,8 +327,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.hit.algorithm" />
       <option name="MAIN_CLASS_NAME" value="com.hit.algorithm.RandomAlgoCacheImplTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="putElement" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -363,19 +377,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.RandomAlgoCacheImplTest" />
       <item itemvalue="JUnit.LRUAlgoCacheImplTest and 3 more" />
-      <item itemvalue="JUnit.LRUAlgoCacheImplTest.removeElement" />
-      <item itemvalue="JUnit.MRUAlgoCacheImplTest.getElement" />
       <item itemvalue="JUnit.LRUAlgoCacheImplTest.putElement" />
+      <item itemvalue="JUnit.MRUAlgoCacheImplTest" />
+      <item itemvalue="JUnit.MRUAlgoCacheImplTest.putElement" />
+      <item itemvalue="JUnit.RandomAlgoCacheImplTest.putElement" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RandomAlgoCacheImplTest.putElement" />
+        <item itemvalue="JUnit.MRUAlgoCacheImplTest.putElement" />
         <item itemvalue="JUnit.LRUAlgoCacheImplTest.putElement" />
-        <item itemvalue="JUnit.MRUAlgoCacheImplTest.getElement" />
         <item itemvalue="JUnit.LRUAlgoCacheImplTest and 3 more" />
         <item itemvalue="JUnit.LRUAlgoCacheImplTest and 3 more" />
-        <item itemvalue="JUnit.LRUAlgoCacheImplTest.removeElement" />
       </list>
     </recent_temporary>
   </component>
@@ -395,47 +409,52 @@
       <workItem from="1523604089340" duration="786000" />
       <workItem from="1523802732928" duration="191000" />
       <workItem from="1525264537576" duration="222000" />
-      <workItem from="1525270103503" duration="4340000" />
+      <workItem from="1525270103503" duration="4923000" />
+      <workItem from="1525413214150" duration="1658000" />
+      <workItem from="1525420478191" duration="1437000" />
+      <workItem from="1525424536613" duration="204000" />
+      <workItem from="1525596245633" duration="1816000" />
+      <workItem from="1525607786857" duration="3833000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LRUAlgoCacheImplTest_and_3_more - 2018.04.08 at 15h 58m 58s.xml">
+    <history-entry file="MRUAlgoCacheImplTest - 2018.05.06 at 15h 14m 54s.xml">
+      <configuration name="MRUAlgoCacheImplTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LRUAlgoCacheImplTest_and_3_more - 2018.05.06 at 15h 56m 48s.xml">
       <configuration name="LRUAlgoCacheImplTest and 3 more" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUAlgoCacheImplTest_and_3_more - 2018.04.08 at 20h 27m 57s.xml">
+    <history-entry file="LRUAlgoCacheImplTest_and_3_more - 2018.05.06 at 16h 07m 27s.xml">
       <configuration name="LRUAlgoCacheImplTest and 3 more" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest_getElement - 2018.04.11 at 12h 37m 11s.xml">
-      <configuration name="MRUAlgoCacheImplTest.getElement" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MRUAlgoCacheImplTest_getElement - 2018.04.11 at 12h 38m 45s.xml">
-      <configuration name="MRUAlgoCacheImplTest.getElement" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LRUAlgoCacheImplTest_putElement - 2018.05.02 at 17h 12m 19s.xml">
+    <history-entry file="LRUAlgoCacheImplTest_putElement - 2018.05.06 at 16h 11m 10s.xml">
       <configuration name="LRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUAlgoCacheImplTest_putElement - 2018.05.02 at 17h 12m 38s.xml">
+    <history-entry file="LRUAlgoCacheImplTest_putElement - 2018.05.06 at 16h 11m 22s.xml">
       <configuration name="LRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUAlgoCacheImplTest_putElement - 2018.05.02 at 17h 13m 39s.xml">
-      <configuration name="LRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
+    <history-entry file="MRUAlgoCacheImplTest_putElement - 2018.05.06 at 16h 11m 57s.xml">
+      <configuration name="MRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUAlgoCacheImplTest_putElement - 2018.05.02 at 17h 14m 01s.xml">
-      <configuration name="LRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
+    <history-entry file="RandomAlgoCacheImplTest_putElement - 2018.05.06 at 16h 12m 13s.xml">
+      <configuration name="RandomAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUAlgoCacheImplTest_putElement - 2018.05.02 at 17h 17m 45s.xml">
-      <configuration name="LRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
+    <history-entry file="RandomAlgoCacheImplTest_putElement - 2018.05.06 at 16h 13m 36s.xml">
+      <configuration name="RandomAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LRUAlgoCacheImplTest_putElement - 2018.05.02 at 17h 18m 22s.xml">
-      <configuration name="LRUAlgoCacheImplTest.putElement" configurationId="JUnit" />
+    <history-entry file="RandomAlgoCacheImplTest_putElement - 2018.05.06 at 16h 13m 59s.xml">
+      <configuration name="RandomAlgoCacheImplTest.putElement" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RandomAlgoCacheImplTest_putElement - 2018.05.06 at 16h 14m 30s.xml">
+      <configuration name="RandomAlgoCacheImplTest.putElement" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16819000" />
+    <option name="totallyTimeSpent" value="26350000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-1032" y="-114" width="1040" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
@@ -452,7 +471,7 @@
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24130106" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2734694" />
       <window_info anchor="right" id="Database" order="2" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -461,10 +480,10 @@
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39933994" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="right" id="Commander" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="4" />
     </layout>
   </component>
@@ -476,7 +495,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -781,13 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/RandomAlgoCacheImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/SecondChanceAlgoImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -795,64 +807,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/IAlgoCacheTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/LRUAlgoCacheImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/IAlgoCache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/LRUAlgoCacheImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/MRUAlgoCacheImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2166#2167#0" expanded="true" />
-            <element signature="e#2203#2204#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="e#2328#2329#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/RandomAlgoCacheImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -865,8 +823,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/SecondChanceAlgoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" column="40" lean-forward="true" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+        <state relative-caret-position="180">
+          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/LRUAlgoCacheImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/IAlgoCacheTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/MRUAlgoCacheImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/LRUAlgoCacheImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/MRUAlgoCacheImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hit/algorithm/RandomAlgoCacheImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/com/hit/algorithm/RandomAlgoCacheImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -876,7 +889,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>CacheAlgorithm:jar</last-edited>
+          <last-edited>CacheAlgorithm</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

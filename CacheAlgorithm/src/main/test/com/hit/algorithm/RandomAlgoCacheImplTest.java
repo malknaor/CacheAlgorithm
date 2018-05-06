@@ -26,9 +26,9 @@ public class RandomAlgoCacheImplTest implements IAlgoCacheTest {
         testObject.putElement(2, "two");
         testObject.putElement(3, "three");
 
-        assertEquals("one", testObject.putElement(1 , "one"));
-        assertEquals("two", testObject.putElement(2 , "two"));
-        assertEquals("three", testObject.putElement(3 , "three"));
+        assertEquals(null, testObject.putElement(1 , "one"));
+        assertEquals(null, testObject.putElement(2 , "two"));
+        assertEquals(null, testObject.putElement(3 , "three"));
     }
 
     @Test
