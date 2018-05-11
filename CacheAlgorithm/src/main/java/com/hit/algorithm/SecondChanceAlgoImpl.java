@@ -34,6 +34,7 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
         if (checkIfExist) {
             for (Complex<K, V> complex: cacheQueue) {
                 if (complex.getKey() == key){
+                    complex.setValue(value);
                     complex.setRefBit(true);
                     break;
                 }
@@ -102,6 +103,10 @@ public class SecondChanceAlgoImpl<K, V> extends AbstractAlgoCache<K, V> implemen
             this.key = key;
             this.value = value;
             refBit = false;
+        }
+
+        public void setValue(V value) {
+            this.value = value;
         }
 
         public K getKey() {

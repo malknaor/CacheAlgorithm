@@ -34,6 +34,7 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
         V retVal = null;
 
         if (cache.containsKey(key)) {
+            cache.get(key).setValue(value);
             cache.get(key).setCount(0);
         } else if (cache.size() < capacity) {
             cache.put(key, new Complex<>(value));
@@ -80,6 +81,10 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
 
         public V getValue() {
             return value;
+        }
+
+        public void setValue(V value) {
+            this.value = value;
         }
 
         public Integer getCount() {

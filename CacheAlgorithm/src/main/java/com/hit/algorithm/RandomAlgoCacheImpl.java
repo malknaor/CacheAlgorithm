@@ -31,6 +31,7 @@ public class RandomAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implement
         V retVal = null;
 
         if (cache.containsKey(key)) {
+            cache.put(key, value);
             retVal = null;
         } else if (cache.size() < capacity) {
             cache.put(key, value);
