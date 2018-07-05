@@ -34,7 +34,9 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
         V retVal = null;
 
         if (cache.containsKey(key)) {
-            cache.get(key).setValue(value);
+            if (value != null) {
+                cache.get(key).setValue(value);
+            }
             cache.get(key).setCount(0);
         } else if (cache.size() < capacity) {
             cache.put(key, new Complex<>(value));
@@ -68,6 +70,38 @@ public class MRUAlgoCacheImpl<K, V> extends AbstractAlgoCache<K, V> implements I
         if (cache.containsKey(key)) {
             cache.remove(key);
         }
+    }
+
+    /**
+     * Returns a string representation of the object. In general, the
+     * {@code toString} method returns a string that
+     * "textually represents" this object. The result should
+     * be a concise but informative representation that is easy for a
+     * person to read.
+     * It is recommended that all subclasses override this method.
+     * <p>
+     * The {@code toString} method for class {@code Object}
+     * returns a string consisting of the name of the class of which the
+     * object is an instance, the at-sign character `{@code @}', and
+     * the unsigned hexadecimal representation of the hash code of the
+     * object. In other words, this method returns a string equal to the
+     * value of:
+     * <blockquote>
+     * <pre>
+     * getClass().getName() + '@' + Integer.toHexString(hashCode())
+     * </pre></blockquote>
+     *
+     * @return a string representation of the object.
+     */
+    @Override
+    public String toString() {
+        String tempStr = "";
+
+        for (K id: this.cache.keySet()) {
+            tempStr += id + ", " + this.cache.get(id) + "\n";
+        }
+
+        return tempStr;
     }
 
     private class Complex<V> {

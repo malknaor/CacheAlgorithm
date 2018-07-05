@@ -28,6 +28,9 @@ public class SecondChanceAlgoImplTest implements IAlgoCacheTest {
 
         testObject.putElement(10, "Ten");
         testObject.putElement(10, "Ten");
+        testObject.putElement(10, null);
+        assertEquals("Ten", testObject.getElement(10));
+
         testObject.putElement(20, "Twenty");
         testObject.putElement(20, "Twenty");
         testObject.putElement(30, "Thirty");
